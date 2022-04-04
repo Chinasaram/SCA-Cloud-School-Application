@@ -13,9 +13,7 @@ pipeline {
  
         stage('Build') {
             steps {
-                    {
                   echo "Building python script"
-              }
             }
         }
  
