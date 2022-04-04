@@ -3,10 +3,12 @@ pipeline {
  
     stages {
         stage('Source (Git)') {
-        sh """
-            cd /home/ubuntu/SCA-Cloud-School-Application/script
-	        git pull
-         """
+	    steps {
+              sh """
+              cd /home/ubuntu/SCA-Cloud-School-Application/script
+	      git pull
+              """
+	    }
         }
  
         stage('Build') {
