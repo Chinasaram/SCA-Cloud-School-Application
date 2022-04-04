@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
 		    sh 'cd /home/ubuntu/SCA-Cloud-School-Application/script'
-                    sh 'python program.py'
+                    sh 'python3 program.py'
             }
         }
  
